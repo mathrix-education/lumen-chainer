@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Utils;
+namespace Mathrix\Chainer;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
