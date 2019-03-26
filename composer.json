@@ -1,0 +1,22 @@
+{
+  "name": "mathrix/lumen-chainer",
+  "description": "A small util which be used to make multiple API request at once.",
+  "type": "library",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Mathieu Bour",
+      "email": "mathieu@mathrix.fr"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:mathrix-education/lumen-zero.git"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "mathrix/lumen-zero": "dev-master"
+  }
+}
