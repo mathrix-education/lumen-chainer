@@ -41,21 +41,21 @@ class Chainer
     public function process()
     {
         $this->subRequests = $this->request->input("requests", []);
-        foreach ($this->subRequests as $key => $subRequest) {
-            $this->processIndividualRequest($key, $subRequest);
+        foreach ($this->subRequests as $subRequest) {
+            $this->processIndividualRequest($subRequest);
         }
         return new JsonResponse($this->responseData);
     }
 
 
     /**
-     * @param string $key
      * @param array $subRequest
      *
      * @throws Http400BadRequestException
      */
-    private function processIndividualRequest(string $key, array $subRequest)
+    private function processIndividualRequest(array $subRequest)
     {
+        $key = $subRequest["name"];
         $request = Request::create(
             $this->resolve($subRequest["url"]),
             $subRequest["method"],
