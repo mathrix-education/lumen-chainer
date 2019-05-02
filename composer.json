@@ -1,7 +1,16 @@
 {
   "name": "mathrix/lumen-chainer",
   "description": "A small util which be used to make multiple API request at once.",
+  "version": "1.1.0",
   "type": "library",
+  "keywords": [
+    "php",
+    "lumen",
+    "chain",
+    "request",
+    "multiple"
+  ],
+  "homepage": "https://github.com/mathrix-education",
   "license": "proprietary",
   "authors": [
     {
@@ -9,20 +18,34 @@
       "email": "mathieu@mathrix.fr"
     }
   ],
+  "support": {
+    "email": "mathieu@mathrix.fr",
+    "issues": "https://github.com/mathrix-education/lumen-chainer/issues",
+    "wiki": "https://github.com/mathrix-education/lumen-chainer/wiki",
+    "source": "https://github.com/mathrix-education/lumen-chainer",
+    "docs": "https://github.com/mathrix-education"
+  },
+  "require": {
+    "php": ">=7.2",
+    "ext-json": "*",
+    "mathrix/lumen-zero": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mathrix\\Chainer\\": "src"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "repositories": [
     {
       "type": "git",
       "url": "git@github.com:mathrix-education/lumen-zero.git"
     }
   ],
-  "require": {
-    "php": ">=7.2",
-    "ext-json": "*",
-    "mathrix/lumen-zero": "^1.0.0 || dev-master"
-  },
-  "autoload": {
-    "psr-4": {
-      "Mathrix\\Chainer\\": "src"
-    }
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
   }
 }
