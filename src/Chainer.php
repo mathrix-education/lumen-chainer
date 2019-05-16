@@ -4,7 +4,7 @@ namespace Mathrix\Chainer;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Mathrix\Lumen\Exceptions\Http\Http400BadRequestException;
+use Mathrix\Lumen\Zero\Exceptions\Http\Http400BadRequestException;
 use Symfony\Component\HttpFoundation\ParameterBag;
 
 /**

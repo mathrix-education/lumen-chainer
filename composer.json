@@ -1,7 +1,7 @@
 {
   "name": "mathrix/lumen-chainer",
   "description": "A small util which be used to make multiple API request at once.",
-  "version": "1.1.0",
+  "version": "1.2.0-rc1",
   "type": "library",
   "keywords": [
     "php",
@@ -28,7 +28,7 @@
   "require": {
     "php": ">=7.2",
     "ext-json": "*",
-    "mathrix/lumen-zero": "^1.1"
+    "mathrix/lumen-zero": "v2.0.0.x-dev"
   },
   "autoload": {
     "psr-4": {
