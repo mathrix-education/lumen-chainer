@@ -28,7 +28,7 @@
   "require": {
     "php": ">=7.2",
     "ext-json": "*",
-    "mathrix/lumen-zero": "v2.0.0.x-dev"
+    "mathrix/lumen-zero": "dev-master"
   },
   "autoload": {
     "psr-4": {
